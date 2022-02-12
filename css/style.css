@@ -70,7 +70,12 @@ body {
     min-height: 104px;
 }
 
-.header__logo {}
+.header__logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: inherit;
+}
 
 .header__menu {
     margin: 0 0 0 133px;
@@ -78,11 +83,23 @@ body {
 
 .menu {}
 
-.menu__list {}
+.menu__list {
+    display: flex;
+
+}
 
 .menu__item {}
 
-.menu__link {}
+.menu__item:not(:last-child) {
+    margin: 0 21px 0 0;
+}
+
+
+.menu__link {
+    color: #737373;
+    font-weight: 600;
+    line-height: calc(24 / 14 * 100%);
+}
 
 
 /* Header */
