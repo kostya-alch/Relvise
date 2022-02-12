@@ -52,6 +52,8 @@ body {
 [class*='__container'] {
     max-width: 1046px;
     margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
 }
 
 /* Header */
@@ -70,6 +72,15 @@ body {
     min-height: 104px;
 }
 
+@media (max-width: 478.98px) {
+
+    /* Мобилки */
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+
 .header__logo {
     font-weight: bold;
     font-size: 24px;
@@ -81,10 +92,39 @@ body {
     margin: 0 0 0 133px;
 }
 
-.menu {}
+@media (max-width: 991.98px) {
+
+    /* Планшеты */
+    .header__menu {
+        margin: 0 0 0 80px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* Мобилки */
+    .header__menu {
+        margin: 0 0 0 40px;
+    }
+}
+
+@media (max-width: 478.98px) {
+
+    /* Мобилки */
+    .header__menu {
+        margin: 0 0 0 20px;
+    }
+}
+
+
+.menu {
+    /* отступы безопасности, если заказчик вдруг добавит пункты в меню */
+    padding: 5px 0;
+}
 
 .menu__list {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -99,6 +139,14 @@ body {
     color: #737373;
     font-weight: 600;
     line-height: calc(24 / 14 * 100%);
+}
+
+@media (max-width: 478.98px) {
+
+    /* Мобилки */
+    .menu__link {
+        font-size: 18px;
+    }
 }
 
 
