@@ -40,12 +40,10 @@ body {
     color: #252B42;
     font-weight: 500;
     font-family: Montserrat;
+    background: #FAFAFA;
 }
 
 /* Обнуляющие  */
-
-
-
 
 .wrapper {
     min-height: 100%;
@@ -54,6 +52,7 @@ body {
     flex-direction: column;
 }
 
+/* Чтобы не писать по 20 раз container */
 [class*='__container'] {
     max-width: 1046px;
     margin: 0 auto;
@@ -61,7 +60,7 @@ body {
     padding: 0 15px;
 }
 
-
+/* Вспомогательный класс для адаптации изображений */
 ._ibg {
     position: relative;
 }
@@ -74,6 +73,8 @@ body {
     left: 0;
     object-fit: cover;
 }
+
+/* Вспомогательный класс для адаптации изображений */
 
 /* Header */
 
@@ -183,8 +184,34 @@ body {
     z-index: 2;
 }
 
+.page__adventages {}
+
 /* Main */
 
+/* Header */
+
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.header-block__title {
+    font-weight: 700;
+    line-height: 142%;
+    font-size: 40px;
+}
+
+.header-block__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.header-block__subtitle {
+    line-height: 142%;
+    color: #737373;
+}
+
+
+/* Header */
 
 
 .main-block {
@@ -400,3 +427,58 @@ body {
 }
 
 /* Services */
+
+/* Advantages */
+
+
+
+.adventages {
+    padding: 80px 0;
+}
+
+.adventages__header {
+    margin: 0 0 50px 0;
+}
+
+.adventages__body {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.adventages__column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+
+.adventages__item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.adventages__item>*:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.adventages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.adventages__value {
+    font-size: 40px;
+    line-height: calc(57 / 40 * 100%);
+    color: #252b42;
+}
+
+.adventages__text {
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    color: #737373;
+    letter-spacing: 0.1px;
+}
+
+/* Advantages */
