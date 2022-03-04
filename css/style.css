@@ -182,6 +182,7 @@ body {
     z-index: 2;
 }
 
+.page__whoweare {}
 
 /* Main */
 
@@ -572,7 +573,6 @@ body {
     }
 }
 
-
 .item-practice {
     display: flex;
     height: 100%;
@@ -616,5 +616,155 @@ body {
     padding: 0 0 calc(138 / 230 * 100%) 0;
 }
 
-
 /* Practice */
+
+/* Whoweare */
+
+
+
+.whoweare {
+    padding: 80px 0 130px 0;
+    background-color: #fff;
+}
+
+.whoweare__header {
+    margin: 0 0 100px 0;
+}
+
+.whoweare__body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.whoweare__video {
+    flex: 0 0 calc(600 / 1046 * 100%);
+    position: relative;
+    padding: 0 0 calc(442 / 1046 * 100%) 0;
+}
+
+.whoweare__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.whoweare__content {
+    flex: 1 1 auto;
+    padding: 20px 0 0 121px;
+}
+
+
+.whoweare__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: calc(57 / 40 * 100%);
+    letter-spacing: 0.2px;
+}
+
+.whoweare__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.whoweare__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+}
+
+.whoweare__items {
+    margin: 50px 0 0 0;
+}
+
+.whoweare__item:not(:last-child) {
+    margin: 0 0 30px 0;
+}
+
+.item-whoweare {
+    display: flex;
+}
+
+.item-whoweare__icon {
+    flex: 0 1 32px;
+}
+
+.item-whoweare__body {
+    flex: 1 1 auto;
+    padding: 0 0 0 20px;
+}
+
+.item-whoweare__title {
+    font-weight: 700;
+    font: 16px;
+    line-height: calc(24 / 16 * 100%);
+}
+
+.item-whoweare__title:not(:last-child) {
+    margin: 0 0 5px 0;
+}
+
+.item-whoweare__text {
+    color: #737373;
+    white-space: nowrap;
+    line-height: 142%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 225px;
+}
+
+@media (max-width: 1080px) {
+    .whoweare__content {
+        padding: 0px 0 0 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .whoweare {
+        padding: 50px 0 50px 0;
+    }
+
+    .whoweare__body {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .whoweare__title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .whoweare__text {
+        text-align: center;
+    }
+
+    .whoweare__header {
+        margin: 0 0 30px 0;
+    }
+
+    .whoweare__content {
+        padding: 0;
+    }
+
+    .whoweare__video {
+        padding: 0 0 calc(315 / 560 * 100%) 0;
+    }
+
+    .whoweare__video:not(:last-child) {
+        margin: 50px 0 0 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .whoweare {
+        padding: 15px 0 50px 0;
+    }
+
+    .whoweare__video:not(:last-child) {
+        margin: 30px 0 0 0;
+    }
+}
+
+/* Whoweare */
