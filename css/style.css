@@ -176,15 +176,12 @@ body {
     flex: 1 1 auto;
 }
 
-.page__main-block {}
-
 .page__services {
     margin: -111px 0 0 0;
     position: relative;
     z-index: 2;
 }
 
-.page__adventages {}
 
 /* Main */
 
@@ -354,11 +351,6 @@ body {
 
 /* Services */
 
-.services {}
-
-.services__container {}
-
-.services__body {}
 
 @media (min-width: 670px) {
     .services__body {
@@ -406,8 +398,6 @@ body {
     }
 }
 
-.item-service {}
-
 .item-service>*:not(:last-child) {
     margin: 0 0 10px 0;
 }
@@ -424,8 +414,6 @@ body {
 .item-service__green .item-service__text {
     color: #fff;
 }
-
-.item-service__icon {}
 
 .item-service__title {
     font-weight: 700;
@@ -527,3 +515,106 @@ body {
 }
 
 /* Advantages */
+
+
+/* Practice */
+
+
+.practice {
+    padding: 125px 0 80px 0;
+}
+
+@media (max-width: 993px) {
+    .practice {
+        padding: 40px 0 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .practice {
+        padding: 0px 0 40px 0;
+    }
+}
+
+.practice__header {
+    margin: 0 0 45px 0;
+}
+
+@media (max-width: 767px) {
+    .practice__header {
+        margin: 0 0 25px 0;
+    }
+}
+
+.practice__body {
+    margin: 0 -20px -30px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.practice__column {
+    padding: 0 20px;
+    flex: 0 1 25%;
+    margin: 0 0 30px 0;
+    background-color: #fff;
+}
+
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 630px) {
+    .practice__column {
+        flex: 0 1 100%;
+    }
+}
+
+
+.item-practice {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.item-practice__link {
+    color: inherit;
+    display: inline-block;
+}
+
+.item-practice__link:hover {
+    text-decoration: underline;
+    color: #494444;
+}
+
+.item-practice__link:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+
+.item-practice__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    letter-spacing: 0.1px;
+}
+
+
+.item-practice__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+}
+
+.item-practice__image {
+    display: block;
+    padding: 0 0 calc(138 / 230 * 100%) 0;
+}
+
+
+/* Practice */
