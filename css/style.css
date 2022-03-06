@@ -208,10 +208,6 @@ body {
     margin: 0 0 10px 0;
 }
 
-.page__subscribe {}
-
-.page__getintouch {}
-
 /* Main */
 
 .main-block {
@@ -915,7 +911,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .item-getintouch_active {
@@ -944,7 +939,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
-
 }
 
 .item-getintouch__button {
@@ -962,7 +956,6 @@ body {
     line-height: calc(24 / 14 * 100%);
     padding: 5px 20px;
     transition: all 0.3s ease 0s;
-
 }
 
 .item-getintouch__button:hover {
@@ -977,7 +970,6 @@ body {
         display: flex;
         align-items: center;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -1000,6 +992,64 @@ body {
     }
 }
 
-
-
 /* Getintouch */
+
+/* Contact */
+
+.contact {
+    background-color: #fff;
+    padding: 42px 0;
+}
+
+.contact__content {
+    padding: 0 0 20px 0;
+}
+
+
+@media (min-width:767px) {
+    .contact__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact__content {
+        padding: 0 15px 0 0;
+    }
+}
+
+
+.contact__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+}
+
+.contact__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.contact__text {
+    color: #737373;
+    line-height: calc(20 / 14 * 100%);
+}
+
+.contact__button {
+    display: flex;
+    background-color: #ff7b47;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 58px;
+    border-radius: 5px;
+    padding: 5px 40px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.contact__button:hover {
+    background-color: #d16c44;
+}
+
+/* Contact */
